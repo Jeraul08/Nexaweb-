@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaWeb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <!-- HEADER AVEC NAVIGATION -->
+        <nav class="nav container">
+            <!-- LOGO NexaWeb -->
+            <div class="nav-logo">
+                <img src="nexa.png">
+                <a href="#" class="logo-link">
+                    <span class="logo-text">
+                        NexaWeb
+                    </span>
+                </a>
+            </div>
+            <!-- MENU DE NAVIGATION -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#propos" class="nav-link">A propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="nav-link">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#raison-title" class="nav-link">Contact</a>
+                </li>
+                <a href="#raison-title"><button type="button" class="nav-btn">
+                    Obtenir un devis
+                </button></a>
+            </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+
+<!-- OVERLAY -->
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<!-- MENU -->
+<nav class="sidebar">
+    <div class="close-btn" onclick="toggleMenu()">✕</div>
+
+    <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#propos">A propos</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#raison-title">Contact</a></li>
+    </ul>
+
+    <a href="#raison-title"><button class="btn-devis">Obtenir un devis</button></a>
+        </nav>
+    </header>
+    <!-- MAIN -->
+   <main>
+        <section id="hero">
+            <!-- <p class="welcome">Welcome to NexaWeb!</p> -->
+            <div class="hero-content">
+                <div class="content-card">
+                    <h1>Créez votre présence digitale avec <span id="nexa">NexaWeb!</span></h1>
+                    <p>Nous concevons des sites web modernes, performants et professionnels.
+Formez-vous au développement web et maîtrisez les technologies du futur avec <span id="nexa" class="nexa">NexaWeb</span>.</p>
+<br>
+                   <br><br>
+                   <a href="#raison-title"><button type="button" class="btn" onclick="commencer()">Commencer</button></a>
+                </div>
+                <div id="popup"><p>Merci de choisir NexaWeb! Votre projet digital commence maintenant.</p><br><br>
+                <button id="closeMessage" onclick="closeMessage()">OK</button>
+                </div>
+                
+                <div class="content-card" id="content-card">
+                  <img src="image1.png"> 
+                  <p><span id="nexa">NexaWeb<br>↓</span></p>
+                </div>
+            <!-- </div> -->
+        </section>
+        <br><br><br>
+        <div class="info">
+                <h2>Construisons votre réussite digitale</h2>
+                <br><br>
+                <p><span class="nexa">NexaWeb</span> transforme vos idées en solutions digitales performantes grâce à des sites web et des formations en développement web.</p>   
+                <br><br>
+                <a href="#service"><button type="boutton" class="info-btn">
+                    Explorer nos solutions
+                </button></a>
+         </div>
+                <br><br>
+                <section id="info">
+                    <div class="info-service">
+                        <div class="icone"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- bouton du haut -->
+  <line x1="12" y1="2" x2="12" y2="5"/>
+  
+  <!-- corps -->
+  <circle cx="12" cy="14" r="8"/>
+  
+  <!-- aiguille -->
+  <line x1="12" y1="14" x2="16" y2="12"/>
+</svg></div>
+                 <h3>Création rapide</h3>
+                 <p>Nous transformons vos idées en sites web modernes, performants et efficaces.</p>
+                    </div>
+                    <div class="info-service">
+                        <div class="icone"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="4" width="18" height="14" rx="2"/>
+  <line x1="3" y1="8" x2="21" y2="8"/>
+  <rect x="6" y="11" width="5" height="4" rx="1"/>
+  <line x1="13" y1="12" x2="18" y2="12"/>
+  <line x1="13" y1="15" x2="18" y2="15"/>
+</svg></div>
+                 <h3>Design moderne</h3>
+                 <p>Des sites élégants et actuels, conçus pour séduire vos visiteurs.</p>                 
+                    </div>
+                    <div class="info-service">
+                        <div class="icone"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- téléphone -->
+  <rect x="7" y="2" width="10" height="20" rx="1"/>
+  
+  <!-- barre du haut -->
+  <line x1="9" y1="6" x2="15" y2="6"/>
+  
+  <!-- blocs de contenu -->
+  <rect x="9" y="8" width="6" height="3" rx="1"/>
+  <rect x="9" y="12" width="6" height="2" rx="1"/>
+  <rect x="9" y="15" width="4" height="2" rx="1"/>
+</svg></div>
+                 <h3>Site responsive</h3>
+                 <p>Votre site s’adapte parfaitement à tous les écrans, mobile, tablette et ordinateur.</p>
+                    </div>
+                    <div class="info-service">
+                        <div class="icone"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="2">
+  <rect x="3" y="4" width="18" height="12" rx="2"/>
+  <line x1="8" y1="20" x2="16" y2="20"/>
+  <line x1="12" y1="16" x2="12" y2="20"/>
+</svg></div>
+                 <h3>Formation pratique</h3>
+                 <p><span id="nexa">NexaWeb</span> vous forme aux compétences essentielles pour créer des sites modernes et professionnels.</p>
+                    </div>
+                </section><br>
+                <div class="info-plus">
+                    <div class="info">
+                        <h2>Pourquoi choisir <span id="nexa">NexaWeb ?</span></h2><br><br>
+<p><span id="nexa">NexaWeb</span>, c’est bien plus que la création de sites web.
+Nous concevons des sites modernes, rapides et performants pour les entreprises, tout en proposant des formations complètes en développement web pour ceux qui veulent maîtriser les technologies du numérique. Avec <span id="nexa">NexaWeb</span>, vous ne faites pas que réussir en ligne — vous apprenez aussi à construire votre propre avenir digital.</p>
+                    </div>
+                    <div class="info-img">
+                        <img src="image4.png"
+                    </div>
+                </div>
+             </div>
+                <br>
+                <div id="info">
+                    <div class="info-service">
+                        <div class="icone"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="11" width="18" height="10" rx="2"/>
+  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+</svg></div>
+                 <h3>Support fiable</h3>
+                 <p><span class="nexa">NexaWeb</span> vous fournit des supports sûrs pour maîtriser le développement web efficacement.</p>
+                    </div>
+                    <div class="info-service">
+                        <div class="icone"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- tête -->
+  <circle cx="9" cy="8" r="4"/>
+  
+  <!-- épaules -->
+  <path d="M3 20c0-3.5 3-6 6-6s6 2.5 6 6"/>
+  
+  <!-- bulle -->
+  <path d="M16 8h5v4h-2l-3 3v-3h-0z"/>
+</svg></div>
+                 <h3>Accompagnement personnalisé</h3>
+                 <p>Nous vous guidons à chaque étape pour un projet réussi sur mesure.</p>
+                    </div>
+                    <a href="#contact" class="btn-nexa">Découvrir NexaWeb</a>
+                </div>
+                <br>
+                
+                <!--  <section id="temoignage">
+                    <h2 class="title-temoignage">Ils parlent de nous!</h2>
+        <p class="text-temoignage">Nos clients partagent leur satisfaction et leurs réussites grâce à <span id="text-temoignage">NexaWeb</span>.</p>
+                    <div class="temoignage">
+                    <div class="temoignage-card"><img src="prince.jpg"><div><h5>Prince Nzengui.-Entrepreneur</h5>
+                <p id="tmg">"Mon site est moderne, rapide et responsive. L’équipe <span id="hero-title">NexaWeb</span> est très professionnelle et à l’écoute."</p></div></div>
+                    <div class="temoignage-card"><img src="roy.jpg"><div><h5>Roy Sangata.-Freelance</h5>
+                <p id="tmg">"Grâce aux exercices pratiques, j’ai beaucoup progressé en HTML, CSS et JavaScript, formation top!"</p></div></div>
+                    <div class="temoignage-card"><img src="momo.jpg"><div><h5>Clairode Ngouala.-Etudiante</h5>
+                <p id="tmg">"Les cours sont clairs et facile à suivre. <span id="hero-title">NexaWeb</span> rend l’apprentissage du code simple et pratique!"</p></div></div>
+                </div></section> 
+                 -->
+                
+                <section id="propos">
+                    <div class="propos-text">
+                        <h2>Là où vos idées prennent vie</h2><br>
+                        <img src="image5.png">
+                        <p>Chez <span class="nexa">NexaWeb</span>, nous mettons notre passion et notre expertise au service de votre réussite digitale afin de transformer chaque idée en un projet concret et performant.</p>
+                    </div>
+                    <div class="propos-text">
+                        <p><span class="nexa">NexaWeb</span> est une plateforme dédiée à la création de sites web modernes et à la formation en développement web. Notre mission est d’accompagner particuliers, entrepreneurs et entreprises dans leur transformation digitale en leur proposant des solutions performantes, accessibles et adaptées à leurs besoins. Nous croyons que chaque idée mérite d’être mise en valeur grâce à un site web professionnel et des compétences solides. Avec <span class="nexa">NexaWeb</span>, vous ne créez pas seulement un site, vous construisez votre avenir numérique.</p>
+                        <br><br>
+                        <a href="#raison-title"><button type="button" class="propos-btn">Lancer mon projet</button></a>
+                    </div>
+                </section>
+                <br>
+                <section id="service">
+                    <div class="service-text">
+                        <h2>Des solutions digitales adaptées à vos ambitions</h2>
+                        <br>
+                        <p>Nous créons des solutions web puissantes et modernes pour propulser votre activité en ligne. <span class="nexa">NexaWeb</span> vous accompagne avec des services fiables, innovants et adaptés à vos objectifs.</p>
+                    </div>
+                    <div class="service-img">
+                        <img src="image7.png">
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon" id="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="4" width="18" height="12" rx="2"/>
+  <line x1="2" y1="20" x2="22" y2="20"/>
+</svg>
+                </div><br>
+                <h3>Création de sites web modernes</h3><br>
+<p>Nous concevons des sites web professionnels, rapides et adaptés à tous les écrans. Chaque projet est pensé pour offrir une excellente expérience utilisateur et valoriser ton activité.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M22 7L12 2 2 7l10 5 10-5z"/>
+  <path d="M6 10v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
+</svg>
+                    </div><br>
+                    
+ <h3>Formation pratique en développement web</h3>
+ <br>
+<p>Apprends à créer toi-même des sites et applications grâce à une formation claire, orientée vers la pratique.</p><br>
+<img src="html.png">
+<img src="css.png">
+<img src="javas.png">
+                    </div>
+                    <a href="#portfolio" class="service-btn">Voir les projets réalisés</a>
+                </section>
+                <section id="raison-title"><div class="raison-title">
+                    <h3>Alors, qu’est ce qui vous amène sur <span class="nexa">NexaWeb?</span></h3>
+                </div></section>
+                <section id="raison">
+                    <div class="raison"><svg width="50" height="50" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cercle bleu -->
+  <circle cx="60" cy="60" r="55" fill="#2563EB"/>
+
+  <!-- Écran -->
+  <rect x="30" y="40" width="60" height="35" rx="6" fill="white"/>
+  
+  <!-- Support écran -->
+  <rect x="52" y="78" width="16" height="6" rx="2" fill="white"/>
+  <rect x="45" y="84" width="30" height="4" rx="2" fill="white"/>
+
+  <!-- Code </> -->
+  <text x="60" y="63" text-anchor="middle" font-size="16" font-family="monospace" fill="#2563EB">
+    &lt;/&gt;
+  </text>
+
+  <!-- Petit chapeau (apprentissage) -->
+  <polygon points="60,28 75,34 60,40 45,34" fill="white"/>
+  <line x1="75" y1="34" x2="75" y2="42" stroke="white" stroke-width="2"/>
+  <circle cx="75" cy="44" r="2" fill="white"/>
+</svg><button type="button" class="raison-btn" onclick="message1()">Apprendre le développement web</button></div>
+
+<!-- MESSAGE POPUP APRES CLIC  -->
+
+      <div id="popup1">
+          <button id="closeMessage1" onclick="closeMessage1()">
+                <span class="close"></span>
+                <span class="close"></span>
+                </button><br>
+          Bienvenue dans votre parcours vers le métier de développeur web ! <br>
+Commençons à construire vos compétences dès maintenant.<br><br>
+<form action="https://formspree.io/f/meelkelr" method="POST" >
+
+  <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+<br><br>
+  <input type="email" id="email" name="email" placeholder="Votre email" required>
+  <br><br>
+  <textarea cols="10" rows="8" id="message" name="message" placeholder="Votre message" required></textarea>
+<br><br>
+  <button type="submit" id="envoyer" onclick="verifierformulaire()">Envoyer</button>
+            </form>
+<br>
+          
+      </div>
+                    <div class="raison"><svg width="50" height="50" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cercle bleu -->
+  <circle cx="60" cy="60" r="55" fill="#2563EB"/>
+
+  <!-- Écran / navigateur -->
+  <rect x="25" y="35" width="70" height="50" rx="6" fill="white"/>
+  
+  <!-- Barre de navigation -->
+  <rect x="25" y="35" width="70" height="8" rx="3" fill="#E0E0E0"/>
+  <circle cx="32" cy="39" r="2" fill="#FF5F57"/>
+  <circle cx="38" cy="39" r="2" fill="#FFBD2E"/>
+  <circle cx="44" cy="39" r="2" fill="#28C940"/>
+
+  <!-- Contenu site -->
+  <rect x="35" y="50" width="50" height="8" rx="2" fill="#2563EB"/>
+  <rect x="35" y="62" width="50" height="8" rx="2" fill="#2563EB"/>
+  <rect x="35" y="74" width="50" height="8" rx="2" fill="#2563EB"/>
+
+  <!-- Support écran -->
+  <rect x="52" y="90" width="16" height="6" rx="2" fill="white"/>
+  <rect x="45" y="96" width="30" height="4" rx="2" fill="white"/>
+</svg><button type="button" class="raison-btn" onclick="message2()">Créer mon site internet</button></div>
+ <div id="popup2">
+     <button id="closeMessage2" onclick="closeMessage2()">
+                <span class="close"></span>
+                <span class="close"></span>
+                </button>
+          Bonne décision !<br>
+Un site professionnel est la première étape vers votre succès digital.<br><br>
+<form action="https://formspree.io/f/meelkelr" method="POST">
+
+  <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+<br><br>
+  <input type="email" id="email" name="email" placeholder="Votre email" required>
+  <br><br>
+  <textarea cols="10" rows="8" id="message" name="message" placeholder="Votre message" required></textarea>
+<br><br>
+  <button type="submit" id="envoyer">Envoyer</button>
+            </form>
+          
+      </div>
+                    <div class="raison"><svg width="50" height="50" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cercle bleu -->
+  <circle cx="60" cy="60" r="55" fill="#F59E0B"/>
+
+  <!-- Écran -->
+  <rect x="30" y="40" width="60" height="35" rx="6" fill="white"/>
+
+  <!-- Support écran -->
+  <rect x="52" y="78" width="16" height="6" rx="2" fill="white"/>
+  <rect x="45" y="84" width="30" height="4" rx="2" fill="white"/>
+
+  <!-- Flèche montante (progrès / amélioration) -->
+  <line x1="60" y1="65" x2="60" y2="50" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <polyline points="55,55 60,50 65,55" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+</svg><button type="button" class="raison-btn" onclick="message3()">Améliorer mes compétences numériques</button></div>
+<div id="popup3">
+    <button id="closeMessage3" onclick="closeMessage3()">
+                <span class="close"></span>
+                <span class="close"></span>
+                </button>
+          Let's go !<br>
+Il est temps de passer au niveau supérieur et maîtriser le digital comme un pro !<br><br>
+<form action="https://formspree.io/f/meelkelr" method="POST">
+
+  <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+<br><br>
+  <input type="email" id="email" name="email" placeholder="Votre email" required>
+  <br><br>
+  <textarea cols="10" rows="8" id="message" name="message" placeholder="Votre message" required></textarea>
+<br><br>
+  <button type="submit" id="envoyer">Envoyer</button>
+            </form>
+          
+      </div>
+                    <div class="raison"><svg width="50" height="50" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cercle bleu -->
+  <circle cx="60" cy="60" r="55" fill="#8B5CF6"/>
+
+  <!-- Dossier / document -->
+  <rect x="35" y="40" width="50" height="35" rx="4" fill="white"/>
+  <rect x="35" y="40" width="20" height="10" rx="2" fill="#E0E0E0"/>
+
+  <!-- Loupe -->
+  <circle cx="80" cy="70" r="10" fill="white" stroke="#E0E0E0" stroke-width="3"/>
+  <line x1="87" y1="77" x2="95" y2="85" stroke="#E0E0E0" stroke-width="3" stroke-linecap="round"/>
+</svg><button type="button" class="raison-btn" onclick="message4()">Trouver des opportunités professionnelles</button></div>
+<div id="popup4">
+    <button id="closeMessage4" onclick="closeMessage4()">
+                <span class="close"></span>
+                <span class="close"></span>
+                </button><br>
+          Excellente décision ! <br>Chez NexaWeb, nous vous accompagnons pour transformer vos compétences numériques en véritables opportunités professionnelles.
+<br><br>
+<form action="https://formspree.io/f/meelkelr" method="POST">
+
+  <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+<br><br>
+  <input type="email" id="email" name="email" placeholder="Votre email" required>
+  <br><br>
+  <textarea cols="10" rows="8" id="message" name="message" placeholder="Votre message" required></textarea>
+<br><br>
+  <button type="submit" id="envoyer">Envoyer</button>
+            </form>
+      </div>
+                </section>
+                <section class="portfolio" id="portfolio">
+    <h2>Nos Réalisations</h2>
+    <p>Découvrez quelques projets réalisés par <span class="nexa">NexaWeb</span> pour aider les entreprises à se développer en ligne.</p>
+
+    <div class="portfolio-container">
+
+        <div class="projet">
+            <img src="site1.png" alt="Site entreprise">
+            <h3>Site d'entreprise</h3>
+            <p>Création d'un site moderne pour présenter les services d'une entreprise.</p>
+        </div>
+
+        <div class="projet">
+            <img src="site2.png" alt="Site restaurant">
+            <h3>Site restaurant</h3>
+            <p>Site web pour un restaurant avec menu et réservation en ligne.</p>
+        </div>
+
+        <div class="projet">
+            <img src="site3.png" alt="Boutique en ligne">
+            <h3>Boutique en ligne</h3>
+            <p>Création d'une boutique permettant de vendre des produits sur internet.</p>
+        </div>
+        
+
+    </div>
+</section>
+
+
+                
+                 <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h2 class="logo">NexaWeb</h2>
+      <p>
+        <span class="nexa">NexaWeb</span> vous accompagne dans la création de votre site web, 
+        l'amélioration de vos compétences numériques et la recherche 
+        d’opportunités professionnelles.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Services</h3>
+      <ul>
+        <li><a href="#">Créer mon site</a></li>
+        <li><a href="#">Apprendre le développement web</a></li>
+        <li><a href="#">Améliorer mes compétences numériques</a></li>
+        <li><a href="#">Trouver des opportunités</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Liens utiles</h3>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#propos">A propos</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#raison-title">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email : nexaweb08@gmail.com</p>
+      <p>Tél : +242 493 25 40</p>
+      <p>Brazzaville, Congo</p>
+    </div>
+
+  </div><br><br>
+  <div class="footer-social">
+  <h3>Suivez-nous</h3>
+  <div class="social-icons">
+    <a href="https://whatsapp.com/channel/0029Vb7OOpXBadmfKlq2Yv1m" target="_blank" id="what" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61588295130329" target="_blank" id="face" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/Jeraul BAKALA NZABA/" target="_blank" id="link" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</div>
+
+
+  <div class="footer-bottom">
+    <p>© 2026 NexaWeb - Tous droits réservés</p>
+  </div>
+</footer> 
+
+        </main>
+        <script src="index.js"></script>
+   </body>
+</html>
